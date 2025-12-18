@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربری - Sabenix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/prof.css" />
+    <link rel="icon" href="img/logo.jpg"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">sabe<span>nix</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="desginer.html" >طراحی وبسایت</a></li>
+                <li><a href="login.html">ورود/ ثبت نام</a></li>
+                <li><a href="prof.html"  class="active">پنل کاربری</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="page-title">
+                <h1>پنل کاربری</h1>
+                <p>اطلاعات شخصی و سفارشات خود را مدیریت کنید</p>
+            </div>
+
+            <div class="dashboard-container">
+                <!-- User Profile Section -->
+                <div class="user-profile">
+                    <h2>پروفایل کاربری</h2>
+
+                    <!-- Avatar Section -->
+                    <div class="avatar-section">
+                        <div class="avatar-container">
+                            <div class="avatar neutral" id="user-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-edit" id="avatar-edit">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                        </div>
+                        <div class="avatar-info">
+                            <h3 id="user-fullname">کاربر مهمان</h3>
+                            <p id="user-email">user@example.com</p>
+                            <div class="member-since">عضو از ۱۴۰۲/۰۱/۱۵</div>
+                        </div>
+                    </div>
+
+                    <!-- User Form -->
+                    <form id="user-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name" class="form-label">نام <span>*</span></label>
+                                <input type="text" id="first-name" class="form-control" placeholder="نام شما" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name" class="form-label">نام خانوادگی <span>*</span></label>
+                                <input type="text" id="last-name" class="form-control" placeholder="نام خانوادگی شما" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">ایمیل <span>*</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">جنسیت</label>
+                            <div class="gender-selection">
+                                <div class="gender-option male">
+                                    <input type="radio" name="gender" id="gender-male" value="male">
+                                    <label for="gender-male" class="gender-label">
+                                        <i class="fas fa-mars"></i>
+                                        <span>مرد</span>
+                                    </label>
+                                </div>
+                                <div class="gender-option female">
+                                    <input type="radio" name="gender" id="gender-female" value="female">
+                                    <label for="gender-female" class="gender-label">
+                                        <i class="fas fa-venus"></i>
+                                        <span>زن</span>
+                                    </label>
+                                </div>
+                                <div class="gender-option">
+                                    <input type="radio" name="gender" id="gender-none" value="none" checked>
+                                    <label for="gender-none" class="gender-label">
+                                        <i class="fas fa-user"></i>
+                                        <span>ترجیح می‌دهم نگویم</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">شماره تلفن <span>*</span></label>
+                            <input type="tel" id="phone" class="form-control" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="password" class="form-label">پسورد<span>*</span></label>
+                            <input type="password" id="password" class="form-control" placeholder="حداقل 8 کاراکتر لازم است" required>
+                            <div class="password-toggle" id="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-orange" style="width: 100%;">
+                            <i class="fas fa-save"></i> ذخیره تغییرات
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Orders & Support Section -->
+                <div class="orders-section">
+                    <h2>سفارشات من</h2>
+
+                    <div class="orders-content">
+                        <!-- Orders List (Initially hidden) -->
+                        <div class="orders-list" id="orders-list" style="display: none;">
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-id">سفارش #SAB-2023-001</div>
+                                    <div class="order-status status-completed">تکمیل شده</div>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">خدمات</div>
+                                        <div class="order-detail-value">طراحی وبسایت شرکتی</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">تاریخ</div>
+                                        <div class="order-detail-value">۱۴۰۲/۰۵/۱۰</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">مبلغ</div>
+                                        <div class="order-detail-value">۱۲,۵۰۰,۰۰۰ تومان</div>
+                                    </div>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-eye"></i> مشاهده جزئیات
+                                    </button>
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-download"></i> دانلود فاکتور
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-id">سفارش #SAB-2023-002</div>
+                                    <div class="order-status status-processing">در حال انجام</div>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">خدمات</div>
+                                        <div class="order-detail-value">بهینه‌سازی SEO</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">تاریخ</div>
+                                        <div class="order-detail-value">۱۴۰۲/۰۶/۱۵</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">مبلغ</div>
+                                        <div class="order-detail-value">۸,۷۰۰,۰۰۰ تومان</div>
+                                    </div>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-eye"></i> مشاهده جزئیات
+                                    </button>
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-comments"></i> پیام به پشتیبانی
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-id">سفارش #SAB-2023-003</div>
+                                    <div class="order-status status-pending">در انتظار پرداخت</div>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">خدمات</div>
+                                        <div class="order-detail-value">طراحی فروشگاه اینترنتی</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">تاریخ</div>
+                                        <div class="order-detail-value">۱۴۰۲/۰۷/۰۵</div>
+                                    </div>
+                                    <div class="order-detail-item">
+                                        <div class="order-detail-label">مبلغ</div>
+                                        <div class="order-detail-value">۲۵,۰۰۰,۰۰۰ تومان</div>
+                                    </div>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-eye"></i> مشاهده جزئیات
+                                    </button>
+                                    <button class="order-action-btn">
+                                        <i class="fas fa-credit-card"></i> پرداخت
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- No Orders State (Initially shown) -->
+                        <div class="no-orders" id="no-orders">
+                            <div class="no-orders-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3>هنوز سفارشی ثبت نکرده‌اید!</h3>
+                            <p>می‌توانید اولین سفارش خود را برای طراحی یا توسعه وبسایت ثبت کنید.</p>
+                            <a href="config.html" class="btn btn-orange">
+                                <i class="fas fa-plus-circle"></i> اولین سفارش خود را ثبت کنید
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Support Section -->
+                    <div class="support-section">
+                        <h3>پشتیبانی</h3>
+                        <div class="support-info">
+                            <p>در صورت بروز هرگونه مشکل یا داشتن سوال، تیم پشتیبانی سبنیکس آماده پاسخگویی به شماست.</p>
+                            <div class="support-contact">
+                                <div class="support-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>شماره پشتیبانی</h4>
+                                    <p id="support-phone" style="direction: ltr; font-family: monospace;">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn support-btn" id="support-call-btn">
+                            <i class="fas fa-phone"></i> تماس با پشتیبانی
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>sabe<span>nix</span></h3>
+                    <p>طراحی وبسایت حرفه‌ای با جدیدترین تکنولوژی‌ها و استانداردهای روز دنیا</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="config.html">کانفیگ وبسایت</a></li>
+                        <li><a href="dashboard.html">پنل کاربری</a></li>
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>خدمات ما</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">طراحی وبسایت</a></li>
+                        <li><a href="#">فروشگاه اینترنتی</a></li>
+                        <li><a href="#">سئو و بهینه‌سازی</a></li>
+                        <li><a href="#">پشتیبانی وبسایت</a></li>
+                        <li><a href="#">مشاوره رایگان</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تماس با ما</h3>
+                    <p>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                    <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    <p>ایمیل: info@sabenix.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>تمامی حقوق محفوظ است © ۲۰۲۳ سبنیکس | این صفحه پنل کاربری شبیه‌سازی شده است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/prof.js">
+    </script>
+</body>
+</html>
