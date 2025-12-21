@@ -642,7 +642,7 @@
                 padding-right: 10px;
             }
                 .nav-links li{
-                margin-left: 5px;
+                margin-left: 0px;
             }
 
                 
@@ -696,6 +696,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
 
 
 
