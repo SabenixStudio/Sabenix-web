@@ -687,6 +687,15 @@
             .footer-column {
                 flex: 0 0 100%;
             }
+                .nav-links {
+                font-size: 0.5rem;
+                align-items: center;
+                padding-right: 10px;
+            }
+                .nav-links li{
+                margin-left: 0px;
+            }
+
             
             .services-grid, .portfolio-grid {
                 grid-template-columns: 1fr;
@@ -696,6 +705,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
 
 
 
