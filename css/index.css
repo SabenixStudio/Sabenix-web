@@ -693,7 +693,7 @@
                 padding-right: 10px;
             }
                 .nav-links li{
-                margin-left: 0px;
+                margin-left: 10px;
             }
 
             
@@ -705,6 +705,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
 
 
 
