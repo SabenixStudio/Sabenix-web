@@ -637,7 +637,7 @@
 
         @media (max-width: 768px) {
             .nav-links {
-                font-size: 0.5rem;
+                font-size: 5px;
                 align-items: center;
                 padding-right: 10px;
             }
@@ -705,6 +705,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
 
 
 
