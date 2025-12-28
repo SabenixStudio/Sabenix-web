@@ -802,6 +802,11 @@
             .footer-column {
                 flex: 0 0 100%;
             }
+
+                 .name-input , select{
+            width: 200px;
+
+           }
             
 
             .checkbox-options {
@@ -821,3 +826,4 @@
             }
         }
   
+
