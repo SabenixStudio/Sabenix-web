@@ -217,12 +217,12 @@
         }
         
         .nameing{
-            justify-items: center;
-            align-items: center;
-            align-content: center;
-            align-self: center;
-            justify-content: center;
-            justify-self: center;
+            grid-column: 1;
+        }
+        @media (max-width: 992px) {
+            .nameing {
+                grid-template-columns: 1fr;
+            }
         }
         
         .name-input , select{
@@ -802,11 +802,12 @@
             .footer-column {
                 flex: 0 0 100%;
             }
-
-                 .name-input , select{
+           .name-input , select{
             width: 200px;
 
            }
+
+           
             
 
             .checkbox-options {
@@ -826,4 +827,3 @@
             }
         }
   
-
