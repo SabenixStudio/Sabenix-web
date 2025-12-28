@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به حساب کاربری - Sabenix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="img/logo.jpg"/>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <div class="container header-container" id="navbar">
+            <a href="#" class="logo">sabe<span>nix</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" >خانه</a></li>
+                <li><a href="desginer.html" >طراحی وبسایت</a></li>
+                <li><a href="login.html" class="active">ورود/ ثبت نام</a></li>
+                <li><a href="prof.html">پنل کاربری</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="login-container">
+                <!-- Login Illustration -->
+                <div class="login-illustration">
+                    <div class="illustration-img">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2>به سابنیکس خوش آمدید</h2>
+                    <p>ورود امن به پنل کاربری برای مدیریت خدمات طراحی وبسایت</p>
+                    
+                    <ul class="features-list">
+                        <li> ورود و یا ثبت‌ نام فقط با یک <span class="in-text">مرحله</span> <i class="fas fa-check-circle"></i></li>
+                        <li> ورود <span class="in-text">ایمن</span> با تایید دو مرحله‌ای <i class="fas fa-check-circle"></i></li>
+                        <li> پشتیبانی از ورود با <span class="in-text"> شبکه های اجتماعی</span><i class="fas fa-check-circle"></i></li>
+                        <li> بازیابی <snap class="in-text">آسان</snap> رمز عبور<i class="fas fa-check-circle"></i></li>
+                        <li> محافظت از <span class="in-text">حریم خصوصی</span> شما <i class="fas fa-check-circle"></i></li>
+                    </ul>
+                </div>
+
+                <!-- Login Form -->
+                <div class="login-form-container">
+                    <div class="login-header">
+                        <h2>ورود به حساب کاربری</h2>
+                        <p>برای دسترسی به خدمات خود وارد شوید</p>
+                    </div>
+
+                    <!-- Step 1: Email/Phone -->
+                    <div class="form-step" id="step-email">
+                        <form id="email-form">
+                            <div class="form-group">
+                                <label for="email-phone" class="form-label">ایمیل یا شماره تلفن</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <input 
+                                    type="text" 
+                                    id="email-phone" 
+                                    class="form-control" 
+                                    placeholder="example@domain.com یا ۰۹۱۲۳۴۵۶۷۸۹"
+                                    required
+                                    autocomplete="username"
+                                >
+                                <div class="validation-message" id="email-phone-validation"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember-me">
+                                    <label for="remember-me">مرا به خاطر بسپار</label>
+                                </div>
+                                <a href="#" class="forgot-password" id="forgot-password-link">رمز عبور خود را فراموش کرده‌اید؟</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-orange" style="width: 100%;" id="next-step-btn">
+                                <i class="fas fa-arrow-left"></i> ادامه
+                            </button>
+                        </form>
+
+                        <!-- Social Login -->
+                        <div class="social-login">
+                            <h4>یا ورود با</h4>
+                            <div class="social-buttons">
+                                <button class="social-btn google" id="google-login">
+                                    <i class="fab fa-google"></i> Google
+                                </button>
+                                <button class="social-btn facebook" id="facebook-login">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </button>
+                                <button class="social-btn github" id="github-login">
+                                    <i class="fab fa-github"></i> GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Password -->
+                    <div class="form-step hidden" id="step-password">
+                        <button class="back-btn" id="back-btn">
+                            <i class="fas fa-arrow-right"></i> بازگشت برای ویرایش
+                        </button>
+
+                        <div class="user-identifier" style="margin: 20px 0; padding: 15px; background-color: var(--light-teal); border-radius: 8px; text-align: center;">
+                            <p style="margin: 0; font-weight: 600;" id="user-identifier-text"></p>
+                        </div>
+
+                        <form id="password-form">
+                            <div class="form-group">
+                                <label for="password" class="form-label">رمز عبور</label>
+                                <div class="input-icon">
+                                </div>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    class="form-control" 
+                                    placeholder="رمز عبور خود را وارد کنید"
+                                    required
+                                    autocomplete="current-password"
+                                >
+                                <div class="password-toggle" id="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="validation-message" id="password-validation"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember-password">
+                                    <label for="remember-password">مرا به خاطر بسپار</label>
+                                </div>
+                                <a href="#" class="forgot-password" id="forgot-password-link-2">رمز عبور خود را فراموش کرده‌اید؟</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-orange" style="width: 100%;" id="login-btn">
+                                <i class="fas fa-sign-in-alt"></i> ورود به حساب
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 3: Forgot Password -->
+                    <div class="form-step hidden" id="step-forgot">
+                        <button class="back-btn" id="back-to-login">
+                            <i class="fas fa-arrow-right"></i> بازگشت به ورود
+                        </button>
+
+                        <div class="login-header">
+                            <h2>بازیابی رمز عبور</h2>
+                            <p>ایمیل یا شماره تلفن خود را وارد کنید تا لینک بازیابی برای شما ارسال شود</p>
+                        </div>
+
+                        <form id="forgot-form">
+                            <div class="form-group">
+                                <label for="recovery-email-phone" class="form-label">ایمیل یا شماره تلفن</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <input 
+                                    type="text" 
+                                    id="recovery-email-phone" 
+                                    class="form-control" 
+                                    placeholder="example@domain.com یا ۰۹۱۲۳۴۵۶۷۸۹"
+                                    required
+                                >
+                                <div class="validation-message" id="recovery-validation"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-orange" style="width: 100%;" id="recovery-btn">
+                                <i class="fas fa-paper-plane"></i> ارسال لینک بازیابی
+                            </button>
+                        </form>
+
+                        <div class="recovery-info" style="margin-top: 30px; padding: 15px; background-color: var(--light-teal); border-radius: 8px;">
+                            <p style="margin: 0; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> لینک بازیابی رمز عبور به ایمیل یا شماره تلفن شما ارسال خواهد شد. در صورت عدم دریافت، صندوق اسپم خود را بررسی کنید.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>sabe<span>nix</span></h3>
+                    <p>طراحی وبسایت حرفه‌ای با جدیدترین تکنولوژی‌ها و استانداردهای روز دنیا</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="config.html">کانفیگ وبسایت</a></li>
+                        <li><a href="dashboard.html">پنل کاربری</a></li>
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="login.html">ورود / ثبت‌نام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>خدمات ما</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">طراحی وبسایت</a></li>
+                        <li><a href="#">فروشگاه اینترنتی</a></li>
+                        <li><a href="#">سئو و بهینه‌سازی</a></li>
+                        <li><a href="#">پشتیبانی وبسایت</a></li>
+                        <li><a href="#">مشاوره رایگان</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تماس با ما</h3>
+                    <p>تهران، شهر جدید پرند، فاز 5، خیابان محلاتی پلاک c.6</p>
+                    <p>تلفن: 09127136411</p>
+                    <p>ایمیل: sabenixs@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>تمامی حقوق محفوظ است © 2025 سابنیکس </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/login.js">
+       
+    </script>
+</body>
+</html>

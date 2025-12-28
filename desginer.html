@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کانفیگ وبسایت - Sabenix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/desginer.css" />
+    <link rel="icon" href="img/logo.jpg"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container" id="navbar">
+            <a href="#" class="logo">sabe<span>nix</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" >خانه</a></li>
+                <li><a href="desginer.html" class="active">طراحی وبسایت</a></li>
+                <li><a href="login.html">ورود/ ثبت نام</a></li>
+                <li><a href="prof.html">پنل کاربری</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="page-title">
+                <h1>طراح وبسایت خود باشید</h1>
+                <p>با استفاده از این ابزار می‌توانید المان‌های مختلف وبسایت خود را انتخاب کنید و پیش‌نمایش زنده آن را مشاهده نمایید بهتر است با کامپیوتر و یا لپتاب وارد این قست بشوید
+                    .
+                </p>
+            </div>
+            <div class="des-name">
+                <div class="type">
+                    <h2>نام این طرح را وارد کنید</h2>
+
+                    <form class="nameing">
+                        <input type="text" class="name-input" placeholder="نام اختصاصی" required>
+                        <select class="select">
+                            <option disabled selected>نوع سایت شما</option>
+                            <option>فروشگاهی</option>
+                            <option>شرکتی</option>
+                            <option>شخصی</option>
+                            <option>آموزشی</option>
+                            <option>خبری و مجله ای</option>
+                            <option>وب پورتال</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <!-- Configuration Panel -->
+                <div class="config-panel">
+                    <h2>تنظیمات وبسایت</h2>
+
+                    <!-- Header Dropdown -->
+                    <div class="dropdown-menu active" id="header-menu">
+                        <div class="dropdown-header">
+                            <h3>هدر / Header</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    موقعیت هدر
+                                    <span>Position</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="header-position" id="header-top" value="top" checked>
+                                        <label for="header-top">بالای صفحه / Top</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="header-position" id="header-right" value="right">
+                                        <label for="header-right">سمت راست / Right</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="header-position" id="header-none" value="none">
+                                        <label for="header-none">نمی‌خوام / None</label>
+                                    </div>
+                                </div>
+                                <div class="option-description">
+                                    انتخاب موقعیت هدر در صفحه وبسایت.
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    استایل هدر
+                                    <span>Style</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="header-fixed" value="fixed">
+                                        <label for="header-fixed">ثابت / Fixed</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="header-transparent" value="transparent">
+                                        <label for="header-transparent">شفاف / Transparent</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="header-shadow" value="shadow" checked>
+                                        <label for="header-shadow">سایه / Shadow</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Dropdown -->
+                    <div class="dropdown-menu" id="footer-menu">
+                        <div class="dropdown-header">
+                            <h3>فوتر / Footer</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    موقعیت فوتر
+                                    <span>Position</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="footer-position" id="footer-bottom" value="bottom" checked>
+                                        <label for="footer-bottom">پایین صفحه / Bottom</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="footer-position" id="footer-none" value="none">
+                                        <label for="footer-none">نمی‌خوام / None</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    المان‌های فوتر
+                                    <span>Elements</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="footer-logo" value="logo" checked>
+                                        <label for="footer-logo">لوگو / Logo</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="footer-links" value="links" checked>
+                                        <label for="footer-links">لینک‌های مفید / Useful Links</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="footer-social" value="social" checked>
+                                        <label for="footer-social">شبکه‌های اجتماعی / Social Media</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="footer-newsletter" value="newsletter">
+                                        <label for="footer-newsletter">خبرنامه / Newsletter</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Dropdown -->
+                    <div class="dropdown-menu" id="sidebar-menu">
+                        <div class="dropdown-header">
+                            <h3>نوار کناری / Sidebar</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    موقعیت سایدبار
+                                    <span>Position</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="sidebar-position" id="sidebar-left" value="left">
+                                        <label for="sidebar-left">وسط / Middle</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="sidebar-position" id="sidebar-right" value="right">
+                                        <label for="sidebar-right">سمت چپ / Left</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="sidebar-position" id="sidebar-none" value="none" checked>
+                                        <label for="sidebar-none">نمی‌خوام / None</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    محتوای سایدبار
+                                    <span>Content</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="sidebar-menu" value="menu">
+                                        <label for="sidebar-menu">منو / Menu</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="sidebar-search" value="search">
+                                        <label for="sidebar-search">جستجو / Search</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="sidebar-posts" value="posts">
+                                        <label for="sidebar-posts">آخرین مطالب / Recent Posts</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="sidebar-categories" value="categories">
+                                        <label for="sidebar-categories">دسته‌بندی‌ها / Categories</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layout Dropdown -->
+                    <div class="dropdown-menu" id="layout-menu">
+                        <div class="dropdown-header">
+                            <h3>لایوت صفحه / Page Layout</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    نوع لایوت
+                                    <span>Layout Type</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="layout-type" id="layout-full" value="full" checked>
+                                        <label for="layout-full">تمام عرض / Full Width</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="layout-type" id="layout-boxed" value="boxed">
+                                        <label for="layout-boxed">باکس / Boxed</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="layout-type" id="layout-fluid" value="fluid">
+                                        <label for="layout-fluid">فلوید / Fluid</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    ساختار صفحه
+                                    <span>Page Structure</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="page-structure" id="structure-1" value="1" checked>
+                                        <label for="structure-1">تک ستونه / Single Column</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="page-structure" id="structure-2" value="2">
+                                        <label for="structure-2">دو ستونه (سایدبار چپ) / Two Columns (Left Sidebar)</label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colors Dropdown -->
+                    <div class="dropdown-menu" id="colors-menu">
+                        <div class="dropdown-header">
+                            <h3>رنگ‌ها / Colors</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="color-picker-group">
+                                <div class="color-picker-title">
+                                    انتخاب رنگ‌ها
+                                    <span>Color Selection</span>
+                                </div>
+                                <div class="color-picker-container">
+                                    <div class="color-picker-item">
+                                        <label for="color-teal">رنگ اصلی (Teal)</label>
+                                        <input type="color" id="color-teal" class="color-picker" value="#008080">
+                                        <div class="color-value" id="color-teal-value">#008080</div>
+                                    </div>
+                                    <div class="color-picker-item">
+                                        <label for="color-orange">رنگ دوم (Orange)</label>
+                                        <input type="color" id="color-orange" class="color-picker" value="#ff7b25">
+                                        <div class="color-value" id="color-orange-value">#ff7b25</div>
+                                    </div>
+                                </div>
+                                <button class="btn color-reset" id="color-reset" style="padding: 8px 15px; font-size: 0.9rem;">
+                                    <i class="fas fa-redo"></i> بازنشانی به رنگ پیش‌فرض
+                                </button>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    تم رنگ
+                                    <span>Color Theme</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="color-theme" id="theme-light" value="light" checked>
+                                        <label for="theme-light">روشن / Light</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="color-theme" id="theme-dark" value="dark">
+                                        <label for="theme-dark">تیره / Dark</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="radio" name="color-theme" id="theme-auto" value="auto">
+                                        <label for="theme-auto">خودکار / Auto</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Dropdown -->
+                    <div class="dropdown-menu" id="features-menu">
+                        <div class="dropdown-header">
+                            <h3>ویژگی‌ها / Features</h3>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    المان‌های ویژه
+                                    <span>Special Elements</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="feature-slider" value="slider" checked>
+                                        <label for="feature-slider">اسلایدر / Slider</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="feature-gallery" value="gallery">
+                                        <label for="feature-gallery">گالری تصاویر / Image Gallery</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="feature-testimonials" value="testimonials" checked>
+                                        <label for="feature-testimonials">نظرات مشتریان / Testimonials</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="feature-cta" value="cta" checked>
+                                        <label for="feature-cta">دکمه اقدام / Call to Action</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-title">
+                                    قابلیت‌ها
+                                    <span>Capabilities</span>
+                                </div>
+                                <div class="checkbox-options">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="capability-responsive" value="responsive" checked>
+                                        <label for="capability-responsive">ریسپانسیو / Responsive</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="capability-seo" value="seo" checked>
+                                        <label for="capability-seo">سئو بهینه / SEO Optimized</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="capability-fast" value="fast" checked>
+                                        <label for="capability-fast">سرعت بالا / Fast Loading</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="capability-multilang" value="multilang">
+                                        <label for="capability-multilang">چند زبانه / Multi-language</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Panel -->
+                <div class="preview-section">
+                    <h2>پیش‌نمایش وبسایت</h2>
+                    
+                    <div class="preview-container layout-1" id="preview-container">
+                        <!-- Visual indicators for left/right -->
+                        <div class="position-indicator indicator-left">چپ</div>
+                        <div class="position-indicator indicator-right">راست</div>
+                        
+                        <!-- Header Preview -->
+                        <div class="preview-header position-top" id="preview-header">
+                            <h3>هدر وبسایت</h3>
+                        </div>
+                        
+                        <!-- Body Preview -->
+                        <div class="preview-body">
+                            <!-- Sidebar Preview -->
+                            <div class="preview-sidebar" id="preview-sidebar">
+                                <h4>نوار کناری</h4>
+                                <p>محتوای سایدبار در اینجا نمایش داده می‌شود.</p>
+                            </div>
+                            
+                            <!-- Main Content Preview -->
+                            <div class="preview-content">
+                                <h3>محتوای اصلی وبسایت</h3>
+                                <p>این بخش محتوای اصلی صفحه وبسایت شما را نمایش می‌دهد.</p>
+                                <div class="preview-features" id="preview-features">
+                                    <!-- Dynamic features will be added here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer Preview -->
+                        <div class="preview-footer position-bottom" id="preview-footer">
+                            <h3>فوتر وبسایت</h3>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- Selection Summary -->
+                    <div class="selection-summary">
+                        <h3>خلاصه انتخاب‌های شما</h3>
+                        <div class="summary-item">
+                            <span>هدر:</span>
+                            <span id="summary-header">بالای صفحه (ثابت)</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>فوتر:</span>
+                            <span id="summary-footer">پایین صفحه (فعال)</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>سایدبار:</span>
+                            <span id="summary-sidebar">غیرفعال</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>لایوت:</span>
+                            <span id="summary-layout">تک ستونه</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>رنگ‌ها:</span>
+                            <span id="summary-colors">Teal & Orange (روشن)</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>ویژگی‌ها:</span>
+                            <span id="summary-features">اسلایدر، نظرات مشتریان، دکمه اقدام</span>
+                        </div>
+                    </div>
+
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h2>نظرات و ایده‌های شما</h2>
+                <textarea id="user-comments" class="comments-textarea" placeholder="نظرات، پیشنهادات و ایده‌های خود را برای وبسایت مورد نظرتان در اینجا بنویسید..."></textarea>
+                <div class="comments-note">
+                    <i class="fas fa-info-circle"></i> نظرات شما برای بهبود ابزار و ارائه خدمات بهتر به ما کمک می‌کند.
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-orange" id="save-config">
+                    <i class="fas fa-save"></i> ذخیره پیکربندی
+                </button>
+                <button class="btn" id="reset-config">
+                    <i class="fas fa-redo"></i> بازنشانی به پیش‌فرض
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>sabe<span>nix</span></h3>
+                    <p>طراحی وبسایت حرفه‌ای با جدیدترین تکنولوژی‌ها و استانداردهای روز دنیا</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="config.html">کانفیگ وبسایت</a></li>
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#portfolio">نمونه کارها</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>خدمات ما</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">طراحی وبسایت</a></li>
+                        <li><a href="#">فروشگاه اینترنتی</a></li>
+                        <li><a href="#">سئو و بهینه‌سازی</a></li>
+                        <li><a href="#">پشتیبانی وبسایت</a></li>
+                        <li><a href="#">مشاوره رایگان</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تماس با ما</h3>
+                    <p>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                    <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    <p>ایمیل: info@sabenix.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>تمامی حقوق محفوظ است © ۲۰۲۳ سبنیکس | این صفحه یک ابزار شبیه‌سازی طراحی وبسایت است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/desginer.js">
+    </script>
+</body>
+</html>
