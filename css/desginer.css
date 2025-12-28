@@ -200,22 +200,29 @@
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0, 0,0.05);
             margin-bottom: 10px;
+            display: grid;
+           grid-template-columns: auto;
+           justify-items: center;
+             
         }
         .type{
-            align-items: center;
-            display: grid;
-            grid-template-columns: auto;
-            justify-items: center;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--teal);
+            border-bottom: 2px solid var(--teal);
+            margin-bottom: 5px;
+            width: 70%;
+            text-align: center;
+            
         }
         
-        .type h2{
-            border-bottom: 2px solid var(--teal);
-            padding-bottom: 10px;
-            width: 50%;
-            text-align: center;
-        }
         .nameing{
             justify-items: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            justify-content: center;
+            justify-self: center;
         }
         
         .name-input , select{
